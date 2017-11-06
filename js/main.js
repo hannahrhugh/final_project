@@ -3,7 +3,7 @@
         setting-name: setting-value
       });
 
-      $('a')
+      alert('hi)')
 
 
       $('.responsive').slick({
