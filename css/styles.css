@@ -1,0 +1,88 @@
+/*******************
+  BASE SETUP
+*******************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+	margin: 0 auto;
+	width: 95%;
+}
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.main-image {
+	width: 100%;
+	text-align: center;
+	max-width: 95%;
+	height: 100%;
+}
+
+/*******************
+  HEADER SETUP
+*******************/
+
+header li {
+	display: inline-block;
+	padding-top: 30px;
+	padding-right: 10px;
+}
+
+header nav {
+	float: right;
+}
+
+header a {
+	font-size: 1.1rem;
+	color: #808080;
+	text-decoration: none;
+	padding: 10px;
+}
+
+/*nav a:last-child {
+	background-color: #00ff00;
+}*/
+
+.car p {
+	border-bottom: 2px solid;
+	border-color: #00ff00;
+	padding: 30px;
+}
+
+.right-teaser-text {
+	float: right;
+	display: block;
+	width: 50%;
+}
+
+.left-teaser-text {
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+/*******************
+  FOOTER SETUP
+*******************/
+
+footer {
+	background-color: #00ff00;
+	padding: 1em 0;
+	margin-top: 3em 0;
+}
