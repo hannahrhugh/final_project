@@ -25,23 +25,33 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
 }
 
 .main-image {
 	width: 100%;
-	text-align: center;
-	max-width: 95%;
 	height: 100%;
+}
+
+.logo {
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+p {
+	margin: 1em 0;
 }
 
 /*******************
   HEADER SETUP
 *******************/
 
-header li {
-	display: inline-block;
-	padding-top: 30px;
-	padding-right: 10px;
+h1 {
+	float: left;
 }
 
 header nav {
@@ -55,8 +65,33 @@ header a {
 	padding: 10px;
 }
 
+nav ul {
+	 display: none;
+}
+
+nav li:last-child {
+	border: 2px solid #00ff00;
+}
+
+/*h1	{
+	color: #00ff00;
+}*/
+
+.hamburger {
+	display: block;
+	font-size: 2em;
+	float: right;
+	color: #00ff00;
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+.show-nav {
+	display: block;
+}
+
 /*nav a:last-child {
-	border: 2px dotted #00ff00;
+	color: white;
 }*/
 
 .car p {
@@ -65,16 +100,81 @@ header a {
 	padding: 30px;
 }
 
-.right-teaser-text {
-	float: right;
-	display: block;
-	width: 50%;
+/*******************
+  FORM SETUP
+*******************/
+
+.enquiry {
+	text-align: left;
+	margin: 0 auto;
+	width: 400px;
+	margin-top: 100px;
 }
 
-.left-teaser-text {
-	float: left;
+
+input {
+	border: 2px solid #00ff00;
 	display: block;
-	width: 50%;
+	width: 100%;
+}
+
+input[type="radio"] {
+	display: inline-block;
+	width: auto;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+/*******************
+  INDEX PAGE
+*******************/
+
+.slider-section img {
+	display: block;
+	margin: 0 auto;
+}
+
+.slick-prev {
+	left: 25px;
+}
+
+.slick-next {
+	right: 25px;
+}
+
+/*******************
+  ABOUT PAGE
+*******************/
+
+.car-teasers {
+	margin: 1.5em 0;
+}
+
+.car-teasers li:not(:last-child) {
+	padding: 1.5em 0;
+	border-bottom: 2px solid;
+	border-color: #00ff00;
+}
+
+.text-right .teaser-content .teaser-image .text-left {
+	display: block;
+	width: 100%;
+}
+
+.teaser-content {
+	width: 55%;
+    margin: 0 auto;
+}
+
+.teaser-content h2 {
+	padding-top: 10px;
+}
+
+.teaser-image img {
+	display: block;
+	margin: 0 auto;
 }
 
 /*******************
@@ -84,5 +184,74 @@ header a {
 footer {
 	background-color: #00ff00;
 	padding: 1em 0;
-	margin-top: 3em 0;
+	margin-top: 20px;
 }
+
+/*******************
+  MEDIA QUERIES
+*******************/
+
+@media screen and (min-width: 1020px) {
+
+/*float images and text alternately*/
+
+.car-teasers {
+	margin: 1.5em 0;
+}
+
+.car-teasers li {
+	padding: 1.5em 0;
+}
+
+.text-right .teaser-content {
+	float: right;
+	width: 47.5%;
+}
+
+.text-right .teaser-image {
+	float: left;
+	margin-right: 5%;
+	width: 47.5%;
+}
+
+.text-left .teaser-content {
+	float: left;
+	margin-right: 5%;
+	width: 47.5%;
+}
+
+.text-left .teaser-image {
+	float: right;
+	width: 47.5%;
+}
+
+.teaser-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+.car-image-container {
+	float: left;
+	display: block;
+	width: 50%;
+
+}
+
+.hamburger {
+	display: none;
+}
+
+header li {
+	display: inline-block;
+	padding: 5px; 
+}
+
+nav ul {
+	padding-top: 10px;
+    padding-right: 20px;
+}
+
+
+
+}
+

@@ -9,11 +9,18 @@
 	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
 <header>
+
+	<img src="./images/autocarsource-logo.png" class="logo">
+
+	<h1 class="tagline">Electric Vehicle Specialist</h1>
+	
+	<i class="hamburger fa fa-bars" aria-hidden="true"></i>
 	
 	<nav class="header clearfix">
 	<ul>
@@ -25,3 +32,42 @@
 	</nav>
 
 </header>
+
+
+<div class="enquiry">
+
+<h2>Enquiry</h3>
+
+	<form>
+		<label>First Name</label>
+		<input type="text" name="firstName" id="firstName">
+		<br>
+		<label>Last Name</label>
+		<input type="text" name="lastName" id="lastName">
+		<br>
+		<label>Email Address</label>
+		<input type="email" name="email" id="email">
+		<br>
+		<label>Contact Number</label>
+		<input type="number" name="contactNumber" id="contactNumber">	
+		<br>
+		<label>Country</label>
+		<input type="text" name="country" id="country">	
+		<br>
+		<label>I am interested in</label>
+		<input type="text" name="vehicle" id="vehicle">	
+		<br>
+		<span>Buyer Type</span>
+		<br>
+		<label>Private Buyer:</label>
+		<input type="radio" name="buyerType" value="privateBuyer">	
+		<label>Trade Buyer:</label>
+		<input type="radio" name="buyerType" value="tradeBuyer">	
+		<br>
+		<button>Submit</button>
+</form>
+
+</div>
+
+</body>
+</html>
