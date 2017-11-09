@@ -131,9 +131,9 @@ input[type="radio"] {
   INDEX PAGE
 *******************/
 
-.slider-section img {
-	display: block;
+.slider-section {
 	margin: 0 auto;
+	max-width: 1000px;
 }
 
 .slick-prev {
@@ -193,65 +193,65 @@ footer {
 
 @media screen and (min-width: 1020px) {
 
-/*float images and text alternately*/
+	/*float images and text alternately*/
 
-.car-teasers {
-	margin: 1.5em 0;
-}
+	.car-teasers {
+		margin: 1.5em 0;
+	}
 
-.car-teasers li {
-	padding: 1.5em 0;
-}
+	.car-teasers li {
+		padding: 1.5em 0;
+	}
 
-.text-right .teaser-content {
-	float: right;
-	width: 47.5%;
-}
+	.text-right .teaser-content {
+		float: right;
+		width: 47.5%;
+	}
 
-.text-right .teaser-image {
-	float: left;
-	margin-right: 5%;
-	width: 47.5%;
-}
+	.text-right .teaser-image {
+		float: left;
+		margin-right: 5%;
+		width: 47.5%;
+	}
 
-.text-left .teaser-content {
-	float: left;
-	margin-right: 5%;
-	width: 47.5%;
-}
+	.text-left .teaser-content {
+		float: left;
+		margin-right: 5%;
+		width: 47.5%;
+	}
 
-.text-left .teaser-image {
-	float: right;
-	width: 47.5%;
-}
+	.text-left .teaser-image {
+		float: right;
+		width: 47.5%;
+	}
 
-.teaser-image img {
-	display: block;
-	margin: 0 auto;
-}
+	.teaser-image img {
+		display: block;
+		margin: 0 auto;
+	}
 
-.car-image-container {
-	float: left;
-	display: block;
-	width: 50%;
+	.car-image-container {
+		float: left;
+		display: block;
+		width: 50%;
 
-}
+	}
 
-.hamburger {
-	display: none;
-}
+	.hamburger {
+		display: none;
+	}
 
-header li {
-	display: inline-block;
-	padding: 5px; 
-}
+	header li {
+		display: inline-block;
+		padding: 5px; 
+	}
 
-nav ul {
-	padding-top: 10px;
-    padding-right: 20px;
-}
+	nav ul {
+		display: block;
+		padding-top: 10px;
+	    padding-right: 20px;
+	}
+ 
 
-
-
-}
+ }
 
