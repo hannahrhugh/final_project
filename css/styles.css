@@ -21,16 +21,9 @@
 	width: 95%;
 }
 
-
-
 body {
 	font-family: 'Lato', sans-serif;
 	line-height: 1.5;
-}
-
-.main-image {
-	width: 100%;
-	height: 100%;
 }
 
 .logo {
@@ -46,13 +39,13 @@ p {
 	margin: 1em 0;
 }
 
+.main-image {
+	max-width: 100%;
+}
 /*******************
   HEADER SETUP
 *******************/
 
-h1 {
-	float: left;
-}
 
 header nav {
 	float: right;
@@ -73,10 +66,6 @@ nav li:last-child {
 	border: 2px solid #00ff00;
 }
 
-/*h1	{
-	color: #00ff00;
-}*/
-
 .hamburger {
 	display: block;
 	font-size: 2em;
@@ -90,14 +79,15 @@ nav li:last-child {
 	display: block;
 }
 
-/*nav a:last-child {
-	color: white;
-}*/
-
 .car p {
 	border-bottom: 2px solid;
 	border-color: #00ff00;
 	padding: 30px;
+}
+
+.tagline {
+	margin: 0 20px;
+	font-size: 1.1rem;
 }
 
 /*******************
@@ -109,6 +99,11 @@ nav li:last-child {
 	margin: 0 auto;
 	width: 400px;
 	margin-top: 100px;
+	font-size: 1.2rem;
+}
+
+.enquiry h2 {
+	margin: 20px 0;
 }
 
 
@@ -125,6 +120,18 @@ input[type="radio"] {
 
 .slick-slide img {
 	width: 100%;
+}
+
+button {
+	font-size: 20px;
+	margin: 30px 0;
+	/*color: #00ff00;*/
+	background-color: white;
+	border: 2px solid #00ff00;
+}
+
+.side-bar {
+	float: right;
 }
 
 /*******************
@@ -170,11 +177,59 @@ input[type="radio"] {
 
 .teaser-content h2 {
 	padding-top: 10px;
+	text-decoration: underline;
 }
 
 .teaser-image img {
 	display: block;
 	margin: 0 auto;
+}
+
+/*.aside-block {
+	float: right;
+	width: 30%;
+}*/
+
+/*******************
+ QUESTIONS PAGE
+*******************/
+
+.question-content h2 {
+	display: inline-block;
+}
+
+.questions-block {
+	width: 100%;
+	margin: 30px 0;
+	line-height: 1.6rem;
+	color: #404040;
+}
+
+.fa-arrow-circle-down {
+	color: #00ff00;
+	font-size: 2rem;
+	display: inline-block;
+	float: right;
+}
+
+.answer-copy {
+	float: left;
+	width: 40%
+}
+
+.answer-image {
+	float: left;
+}
+
+.questions-container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.teaser-image:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /*******************
@@ -183,10 +238,15 @@ input[type="radio"] {
 
 footer {
 	background-color: #00ff00;
+	color: white;
 	padding: 1em 0;
 	margin-top: 20px;
 }
 
+/*.footer-contact {
+	float: right;
+}
+*/
 /*******************
   MEDIA QUERIES
 *******************/
@@ -194,6 +254,17 @@ footer {
 @media screen and (min-width: 1020px) {
 
 	/*float images and text alternately*/
+
+	header li {
+		display: inline-block;
+		padding: 5px; 
+	}
+
+	nav ul {
+		display: block;
+		padding-top: 10px;
+	    padding-right: 20px;
+	}
 
 	.car-teasers {
 		margin: 1.5em 0;
@@ -234,24 +305,37 @@ footer {
 		float: left;
 		display: block;
 		width: 50%;
-
 	}
 
 	.hamburger {
 		display: none;
 	}
 
-	header li {
-		display: inline-block;
-		padding: 5px; 
+	.answer {
+		display: none;
 	}
 
-	nav ul {
-		display: block;
-		padding-top: 10px;
-	    padding-right: 20px;
-	}
+	.main-image {
+	width: 100%;
+	max-height: 30%;
+}
  
+
+ }
+
+ @media screen and (min-width: 996px) {
+
+ 	.teaser-content {
+ 		width: 80%;
+ 	}
+
+ 	.teaser-content h2 {
+ 		text-align: center;
+ 	}
+
+ 	.questions-block p {
+ 		width: 90%;
+ 	}
 
  }
 
